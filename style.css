@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  min-height: 10vh;
+  /* background-color: pink; */
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  justify-content: center;
+}
+
+.logo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: black;
+}
+
+.nav-links li .fab {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.search-form input {
+  font-size: 1rem;
+  padding: 0.7rem;
+  width: 20rem;
+  border: none;
+  border: 2px solid #222;
+}
+
+.search-form button {
+  border: 2px solid #222;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+.search-form button:hover {
+  background: #444;
+  border: 2px solid #444;
+}
